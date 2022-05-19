@@ -9,5 +9,8 @@ events = [event_1, event_2]
 def add_new_event(event):
     events.append(event)
 
-def remove_event(event):
-    events.remove(event)
+def remove_event_func(event):
+    for e in events:
+        if e.name_of_event == str(event["events"]):
+            events.remove(e)
+    

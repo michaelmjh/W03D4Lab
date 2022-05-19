@@ -1,7 +1,7 @@
 {% extends "template.html" %} 
 
 {% block content%}
-
+<form action="/remove_event" method="POST">
 <label for="events">Choose an event:</label>
 <br>
 <select name="events" id="events">
@@ -11,5 +11,6 @@
 </select>
 <br>
 <input type="submit" value="Remove Event">
+</form>
 
 {% endblock %}

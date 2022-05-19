@@ -39,7 +39,8 @@ def show_remove_event():
 
 @app.route("/remove_event", methods=['POST'])
 def remove_event():
-    event = request.form()
-    remove_event(event)
+    event = request.form
+    print(event["events"])
+    remove_event_func(event)
     return render_template('events_list.html', title='Events List', events=events)
 
