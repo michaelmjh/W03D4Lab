@@ -3,20 +3,5 @@
 {% block content %}
 <p>This is a test</p>
 
-    {% for event in events %}
-        <section>
-            <p>
-                Date: {{event.date}}
-                <br>
-                Event Name: {{event.name_of_event}}
-                <br>
-                Number of Guests: {{event.number_of_guests}}
-                <br>
-                Room Location: {{event.room_location}}
-                <br>
-                Description: {{event.description}}
-                <br>
-            </p>
-        </section>
-        {% endfor %}
+
 {% endblock %}
