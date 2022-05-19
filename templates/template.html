@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
 </head>
-{% block content %}
 <body>
+    <ul>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/add_event">Add Event</a></li>
+        <li><a href="/remove_event">Remove Event</a></li>
+    </ul>
+    <hr>
+    {% block content %}
+        </body>
     
-</body>
-{% endblock %}
+        </body>
+    {% endblock %}
 </html>

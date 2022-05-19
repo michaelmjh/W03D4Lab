@@ -5,21 +5,22 @@
 <form action="/add_event" method="POST">
     <label for="date">Date</label>
     <input type="date" name="date" id="date">
-    
+    <br>
     <label for="name">Event Name</label>
     <input type="text" name="name" id="name">
-    
+    <br>
     <label for="number_of_guests">Number of Guests</label>
     <input type="number" name="number_of_guests" id="number_of_guests">
-    
+    <br>
     <label for="room_location">Room Location</label>
     <input type="text" name="room_location" id="room_location">
-    
+    <br>
     <label for="description">Description</label>
     <input type="text" name="description" id="description">
-
+    <br>
     <label for="recurring">Recurring</label>
     <input type="range" name="recurring" id="recurring" min="0" max="1">
+    <br>
     <input type="submit" value="Add Event">
 
 {% endblock %}

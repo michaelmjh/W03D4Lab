@@ -1,0 +1,15 @@
+{% extends "template.html" %} 
+
+{% block content%}
+
+<label for="events">Choose an event:</label>
+<br>
+<select name="events" id="events">
+    {% for event in events%}
+        <option value="{{event.name_of_event}}">{{event.name_of_event}}</option>
+    {% endfor %}
+</select>
+<br>
+<input type="submit" value="Remove Event">
+
+{% endblock %}

@@ -33,3 +33,13 @@ def add_event():
     add_new_event(new_event)
     return render_template('events_list.html', title='Events List', events=events)
 
+@app.route("/remove_event")
+def show_remove_event():
+    return render_template("remove_event.html", title="remove event", events=events)
+
+@app.route("/remove_event", methods=['POST'])
+def remove_event():
+    event = request.form()
+    remove_event(event)
+    return render_template('events_list.html', title='Events List', events=events)
+
